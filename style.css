@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.app {
+    position: relative;
+}
+
+
+.app  h1{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.app .container .div1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid transparent;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.app .container .div1 .body{
+
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 150px;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.app .container .div1 .body::after , .app .container .div1 .body::before{
+    content: "";
+    border: 15px solid black;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+
+}
+
+.app .container .div1 .body::after{
+    left: -7px;
+    
+}
+
+.app .container .div1 .body::before{
+    right: -7px;
+}
+
+.app .container .div1 .body .ear1 , .app .container .div1 .body .ear2{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid pink;
+    background-color: pink;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+
+
+}
+
+.app .container .div1 .body .ear1{
+    left: -2px;
+}
+
+.app .container .div1 .body .ear2{
+    right: -2px;
+}
+
+.app .container .div1 .body .eye1,.app .container .div1 .body .eye2{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    position: absolute;
+    background-color: black;
+    top: 35px;
+    overflow: hidden;
+
+
+}
+
+.app .container .div1 .body .eye1{
+    left: 20px;
+    
+}
+
+.app .container .div1 .body .eye2{
+    right: 20px;
+}
+
+
+
+.app .container .div1 .body .eye1 .eye11,.app .container .div1 .body .eye2 .eye22{
+
+    width: 20px;
+    height: 20px;
+    border: 8px solid pink;
+    border-radius: 30px;
+    position: absolute;
+    top: 4px;
+    z-index: 2;
+    background-color: pink;
+    left: 0;
+
+
+}
+
+
+
+.app .container .div1 .body .mouth{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 1px solid transparent;
+    position: absolute;
+   border-bottom: 2px solid black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+
+
+
+form input{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 30px;
+    
+}
+
+form button{
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+form label{
+    font-weight: bold;
+
+}
+
+
+.error1 ,.error2 ,.error3 ,.error4 ,.error5,.error6,.error7 ,.error8 ,.error9,.error10{
+
+
+    position: absolute;
+    font-size: 65px;
+    color: red;
+    font-weight: bold;
+    transition: .6s;
+    display: none;
+}
+.error1{
+    
+    top: 10%;
+    left: 10%;
+    
+}
+
+.error2{
+    top: 20%;
+    left: 30%;
+}
+
+.error7{
+    top: 40%;
+    left: 20%;
+}
+
+.error4{
+    top: 60%;
+    left: 10%;
+}
+
+.error5{
+    top: 80%;
+    left: 30%;
+}
+
+.error6{
+    top: 10%;
+    left: 70%;
+}
+
+.error8{
+    top: 20%;
+    left: 90%;
+}
+
+.error9{
+    top: 40%;
+    left: 80%;
+}
+
+.error10{
+    top: 60%;
+    left: 60%;
+}
+
+.error3{
+    top: 80%;
+    left: 70%;
+}
+
+
+.message{
+    background-color: red;
+    padding: 20px;
+    color: white;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   position: relative;
+   z-index: 6666666666666666666;
+}
+
