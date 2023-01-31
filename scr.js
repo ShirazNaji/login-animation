@@ -98,7 +98,7 @@ pass.oninput =function(){
 
 pass.onblur =function(){
 
-    if(pass.value.length==0){
+    if(pass.value.length>=0){
         eye1.style.backgroundColor="black";
         eye11.style.display="block";
 
